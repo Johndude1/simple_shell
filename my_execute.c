@@ -15,8 +15,8 @@ perror("fork");
 exit(EXIT_FAILURE);
 } else if (child_pid == 0) 
 {
-execve(path, array[0], NULL == -1);
-perror("execve");
+
+	perror("execve");
 exit(EXIT_FAILURE);
 } else {
 wait(NULL);
