@@ -14,8 +14,8 @@
 /* these are my function prototypes*/
 
 void my_display_text(void);
-void read_text(char *text, size_t size);
-void execute_text(const char *text);
+void read_prompt(char *prompt, size_t size);
+void execute_prompt(const char *prompt);
 void leke_print(const char *text);
 
 

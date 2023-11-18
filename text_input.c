@@ -1,15 +1,15 @@
 #include "shell.h"
 
 /**
-* read_text - main entry
+* read_prompt - main entry
 * @text: user input
 * @size: length of input
-* return: text
+* return: 0 on success
 */
 
-void read_text(char *text, size_t size)
+void read_prompt(char *prompt, size_t size)
 {
-if (fgets(text, size, stdin) == NULL)
+if (fgets(prompt, size, stdin) == NULL)
 {
 if (feof(stdin))
 {
@@ -22,6 +22,6 @@ leke_print("Error while reading text input.\n");
 exit(EXIT_FAILURE);
 }
 }
-text[strcspn(text, "\n")] = '\0';
+prompt[strcspn(prompt, "\n")] = '\0';
 }
 

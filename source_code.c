@@ -2,17 +2,18 @@
 
 /**
 * main - get line functions
+*@prompt: command given
 * Return:  0 on success
 */
 
 int main(void)
 {
-char text[150];
+char prompt[150];
 
 while (true)
 {
-execute_text(text);
-leke_print(const char *text);
+execute_prompt(prompt);
+read_prompt(prompt, sizeof(prompt));
 my_display_text();
 }
 return (0);
